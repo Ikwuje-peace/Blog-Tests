@@ -1,5 +1,6 @@
-# from django.urls import path
+from django.urls import path
+from blog.views import PostAPIView
 
-# urlpatterns = [
-#     path()
-# ]
+urlpatterns = [
+    path('', PostAPIView.as_view())
+]
