@@ -10,4 +10,7 @@ class PostAPIView(generics.CreateAPIView):
 class PostDetailView(generics.RetrieveAPIView):
     queryset = Post
     serializer_class = PostDetailSerializer
+class PostUpdateAPIView(generics.UpdateAPIView):
+    queryset = Post
+    serializer_class = PostSerializer
 
